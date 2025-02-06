@@ -1,0 +1,1 @@
+document.write("내부 스크립트 분리!");
