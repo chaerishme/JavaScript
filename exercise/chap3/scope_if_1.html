@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록 레벨 스코프</title>
+    <script>
+        let num = 10;
+        let user = "홍길동";
+
+        if(num > 5) {
+            let num = 50;
+            num = num + 10;
+        }
+        document.write(`${num} <br>`);
+        if (user != "") {
+            // 여기엔 user가 선언되어 있지 않으므로 위에서 선언한 user에 할당된다.
+            user = "김길동";
+        }
+
+        document.write(`${user} <br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
