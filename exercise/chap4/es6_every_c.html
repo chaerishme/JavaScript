@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every</title>
+    <script>
+        const subjects = ["쓰기", "듣기", "말하기"];
+        const arr1 = subjects.map((item) => {
+            return prompt(`${item}의 점수는?`, "0");
+        });
+
+        let result = arr1.every((item) => (item >= 60));
+
+        result = result ? "합격" : "블합격";
+        document.write(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

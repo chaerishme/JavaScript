@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체</title>
+    <script>
+        var greenArr = ["교대", "방배", "강남"];
+        var yellowArr = ["미금", "정자", "수서"];
+
+        greenArr.splice(2, 1, "서초", "역삼");
+        console.log(greenArr);
+
+        var data1 = yellowArr.pop(); // yellowArr = ["미금", "정자"]
+        var data2 = yellowArr.shift(); // yellowArr = ["정자"]
+
+        yellowArr.push(data2);  // yellowArr = ["정자", "미금"]
+        console.log([...yellowArr]); // 배열을 복사해서 출력
+
+        yellowArr.unshift(data1); // yellowArr = ["수서", "정자", "미금"]
+        console.log(yellowArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
